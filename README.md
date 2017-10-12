@@ -10,7 +10,7 @@
 
 ```bash
 git clone https://github.com/kevinbrillion/wordpress-drones.git
-cd wp-theme-starter/
+cd wordpress-drones/
 ``````
 
 2. Install dependencies
