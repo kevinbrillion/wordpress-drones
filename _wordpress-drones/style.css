@@ -1,0 +1,25 @@
+/*
+Theme Name: Wordpress Parrot Project
+Theme URI: git+https://github.com/kevinbrillion/wordpress-drones.git
+Author: Kevin Brillion
+Author URI: http://www.example.com/
+Description: Built with Gulp + ES6 (Babel)
+Version: 0.1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: wordpress, theme, custom, gulp, parrot, es6
+Text Domain: wordpress_drones
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+html {
+  width: 100%;
+  min-height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: #222222; }
