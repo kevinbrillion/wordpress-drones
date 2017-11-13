@@ -5,7 +5,6 @@ require_once 'lib/scripts-and-styles.php';
 
 
 
-
 /*
  * Product custom type
  */
