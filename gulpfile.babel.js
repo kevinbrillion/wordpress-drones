@@ -17,6 +17,7 @@ import rollup       from 'gulp-rollup';
 import sass         from 'gulp-sass';
 import uglify       from 'gulp-uglify';
 import watch        from 'gulp-watch';
+import imagemin     from 'gulp-imagemin';
 
 
 /* Define environments */
@@ -66,6 +67,10 @@ const routes = {
     vendor: {
         css   : `${base.src}/vendor/css/**/*.css`,
         js    : `${base.src}/vendor/js/**/*.js`
+    },
+    images: {
+        src : `${base.src}/img/**`,
+        dest: `${base.dest}/img/`
     }
 };
 
@@ -233,6 +238,15 @@ gulp.task('scripts:concat', ['scripts:transpile'], () => {
 });
 
 
+/* Images */
+gulp.task('images:imagemin', () => {
+    console.log(routes.images.dest)
+    return gulp.src([routes.images.src])
+    .pipe(imagemin())
+    .pipe(gulp.dest(routes.images.dest))
+})
+
+
 gulp.task('incbuild:css', () => {
     gulp.src('./package.json')
         .pipe(jeditor((pkg) => {
@@ -284,6 +298,7 @@ gulp.task('templates', () => {
 gulp.task('build', ['clean', 'incbuild:all'], () => {
     gulp.start('templates');
     gulp.start('enqueue');
+    gulp.start('images:imagemin');
 });
 
 
@@ -292,6 +307,7 @@ gulp.task('develop', ['build'], () => {
     gulp.watch(routes.templates.watch, ['templates']);
     gulp.watch(routes.styles.watch, ['incbuild:css', 'styles:concat']);
     gulp.watch(routes.scripts.watch, ['incbuild:js', 'scripts:concat']);
+    gulp.watch(routes.images.src, ['images:imagemin']);
 });
 
 gulp.task('default', ['develop']);
