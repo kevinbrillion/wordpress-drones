@@ -27,6 +27,19 @@
     <section class="secondSection homeSection">
         <img src="wp-content/themes/wordpress-drones/_wordpress-drones/img/section2.png" alt="" class="secondSection__img">
         <h2 class="section__title secondSection__title">02</h2>
+        <h3 class="section__subTitle">Pars en mission, rien ne peut t’arrêter !</h3>
+        <p>La relève du jeu est sous vos yeux !
+            Les minidrones se faufilent et s'invitent partout, de la cour de récré jusque dans l'open space.
+            Dotés des meilleures technologies, ils vous font enchaîner courses, acrobaties, jets de projectiles...
+            <br><br>
+            Aucune limite à votre imagination !
+        </p>
+
+        <a href="#" class="section__btn btn__discover">Decouvrir</a>
+    </section>
+    <section class="thridSection homeSection">
+        <img src="wp-content/themes/wordpress-drones/_wordpress-drones/img/section3.png" alt="" class="secondSection__img">
+        <h2 class="section__title thirdSection__title">03</h2>
         <h3 class="section__subTitle">Des technologies pour les pros</h3>
         <p>Réussir des vidéos de grande qualité avec un drone n'a jamais été aussi simple.
             <br><br>

@@ -228,10 +228,10 @@ body {
 .section__btn {
   margin: 70px 0 0 0; }
 
-.firstSection {
+.secondSection {
   z-index: 2; }
 
-.firstSection::before {
+.secondSection::before {
   content: '';
   position: absolute;
   height: 300px;
@@ -247,7 +247,7 @@ body {
   margin: 0 -16px;
   width: calc(100% + 32px); }
 
-.secondSection__title {
+.secondSection__title, .thirdSection__title {
   margin-top: 100px; }
 
 .home__video {
