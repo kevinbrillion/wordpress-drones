@@ -227,6 +227,9 @@ body {
   left: 50%;
   margin-left: -45%;
   bottom: 50%; }
+  @media (min-width: 1333px) {
+    .landing__img {
+      margin-left: -600px; } }
 
 .discover {
   text-align: center;
@@ -304,7 +307,7 @@ body {
   top: 90%;
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
-  z-index: 1; }
+  z-index: 0; }
   @media (min-width: 789px) {
     .secondSection::before {
       display: none; } }

@@ -169,9 +169,43 @@ var ParallaxHome = function () {
     return ParallaxHome;
 }();
 
+/** Class */
+var Player = function () {
+    /**
+     *
+     */
+    function Player() {
+        classCallCheck(this, Player);
+
+        this.video = document.querySelector('.video');
+        console.log(this.video);
+
+        this.pausePlay();
+    }
+
+    createClass(Player, [{
+        key: 'pausePlay',
+        value: function pausePlay() {
+            var _this = this;
+
+            this.video.addEventListener('click', function () {
+                console.log('click');
+                if (_this.video.paused) {
+                    _this.video.play();
+                } else {
+                    _this.video.pause();
+                }
+            });
+        }
+    }]);
+    return Player;
+}();
+
 // Do your frontend magic here :)
 
 
 var parallax = new ParallaxHome();
+
+var player = new Player();
 
 }());

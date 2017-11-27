@@ -33,6 +33,11 @@
   left: 50%;
   margin-left: -45%;
   bottom: 50%;
+
+  @media (min-width: 1333px) {
+    margin-left: -600px;
+
+  }
 }
 
 .discover {
@@ -126,7 +131,7 @@
   left: -10%;
   top: 90%;
   transform: rotate(-15deg);
-  z-index: 1;
+  z-index: 0;
 
   @media (min-width: 789px) {
     display: none;
