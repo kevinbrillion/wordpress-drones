@@ -1,0 +1,121 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: white;
+
+  .logoImg {
+    height: 40px;
+    margin-left: 20px;
+  }
+
+  nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .nav-link {
+      ul {
+        display: inline-block;
+      }
+      li {
+        display: inline-block;
+        padding: 15px 20px;
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 789px) {
+      .nav-link {
+        display: none;
+      }
+    }
+  }
+  .menu {
+    display: none;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    width: 30px;
+    text-align: right;
+
+    @media (max-width: 789px) {
+      display: block;
+    }
+
+    .line {
+      height: 5px;
+      background: black;
+      border-radius: 40px;
+      position: absolute;
+      right: 0;
+      transition: width 0.2s, transform 0.2s ;
+    }
+
+    .line1 {
+      width: 100%;
+    }
+
+    .line2 {
+      width: 70%;
+      top: 10px;
+    }
+    .line3 {
+      width: 40%;
+      top: 20px;
+    }
+
+    &:hover .line {
+      width: 100%;
+    }
+  }
+
+  nav.nav-active {
+    position: fixed !important;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    display: block;
+
+    .menu {
+      .line {
+        width: 100%;
+        top: 50%;
+        left: 0%;
+      }
+      .line3 {
+        display: none;
+      }
+      .line1 {
+        transform: rotate(45deg);
+      }
+      .line2 {
+        transform: rotate(-45deg);
+      }
+    }
+
+    .nav-link {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top:20%;
+      transform: translate(-50%, 0);
+
+      li {
+        display: block;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      height: 40vh;
+      width: 100vw;
+      bottom: 0;
+      background: url('../_wordpress-drones/img/menuDetails.png');
+      background-size: 100%;
+      z-index: 2;
+    }
+  }
+}

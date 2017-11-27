@@ -178,7 +178,6 @@ var Player = function () {
         classCallCheck(this, Player);
 
         this.video = document.querySelector('.video');
-        console.log(this.video);
 
         this.pausePlay();
     }
@@ -201,11 +200,52 @@ var Player = function () {
     return Player;
 }();
 
+/** Class */
+var Header = function () {
+    function Header() {
+        classCallCheck(this, Header);
+
+        this.header = document.querySelector("header");
+        this.menu = document.querySelector(".menu");
+        this.nav = this.header.querySelector("nav");
+
+        console.log(this.header);
+        this.initHeaderClick();
+        this.removeBigScreen();
+    }
+
+    createClass(Header, [{
+        key: "initHeaderClick",
+        value: function initHeaderClick() {
+            var _this = this;
+
+            this.menu.addEventListener('click', function () {
+                _this.nav.classList.toggle('nav-active');
+            });
+        }
+    }, {
+        key: "removeBigScreen",
+        value: function removeBigScreen() {
+            var _this2 = this;
+
+            console.log('resize');
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 789 && _this2.nav.classList.contains('nav-active')) {
+                    _this2.nav.classList.remove('nav-active');
+                }
+            });
+        }
+    }]);
+    return Header;
+}();
+
 // Do your frontend magic here :)
 
 
 var parallax = new ParallaxHome();
 
 var player = new Player();
+
+var header = new Header();
 
 }());

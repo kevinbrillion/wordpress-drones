@@ -5,7 +5,6 @@ export default class Player {
      */
     constructor() {
         this.video = document.querySelector('.video')
-        console.log(this.video)
 
         this.pausePlay()
     }
