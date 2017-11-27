@@ -239,9 +239,6 @@ var Header = function () {
     return Header;
 }();
 
-// Do your frontend magic here :)
-
-
 var parallax = new ParallaxHome();
 
 var player = new Player();

@@ -1,22 +1,15 @@
-        <?php wp_footer(); ?>
-        <?php
+        <footer>
+            <div class="left social">
 
-        /* Set your UA identifier as String here */
-        $googleAnalyticsUA = ''; // Expected: UA-XXXXXXXX-X
+            </div>
+            <div class="right newsletter">
+                <span>Ne ratez plus nos actualités</span>
+                <form action="" method="post" class="subscribe-form">
+                    <input type="email" name="email" class="subscribe-input" placeholder="Abonnez-vous à la news letter !" autofocus>
+                    <button type="submit" class="subscribe-submit">Subscribe</button>
+                </form>
+            </div>
+        </footer>
 
-        if ( !empty( $googleAnalyticsUA ) ) :
-        ?>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', <?= $googleAnalyticsUA ?>, 'auto');
-            ga('send', 'pageview');
-        </script>
-        <?php
-        endif;
-        ?>
     </body>
 </html>

@@ -1,4 +1,4 @@
-/* Wordpress Parrot Project – Author: Kevin Brillion <kevin.brillion@hetic.net> Version: 0.1.0+129 */
+/* Wordpress Parrot Project – Author: Kevin Brillion <kevin.brillion@hetic.net> Version: 0.1.0+140 */
 (function () {
 'use strict';
 
@@ -239,9 +239,6 @@ var Header = function () {
     }]);
     return Header;
 }();
-
-// Do your frontend magic here :)
-
 
 var parallax = new ParallaxHome();
 

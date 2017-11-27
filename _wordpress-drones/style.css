@@ -211,8 +211,10 @@ header {
       display: inline-block; }
     header nav .nav-link li {
       display: inline-block;
-      padding: 15px 20px;
-      font-size: 30px; }
+      padding: 15px 20px; }
+      @media (max-width: 789px) {
+        header nav .nav-link li {
+          font-size: 30px; } }
     @media (max-width: 789px) {
       header nav .nav-link {
         display: none; } }
