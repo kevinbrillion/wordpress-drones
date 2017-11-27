@@ -1,19 +1,40 @@
+@font-face {
+  font-family: 'akrobat';
+  src:  url('../_wordpress-drones/fonts/Akrobat-Regular.otf');
+  font-weight: regular;
+}
+@font-face {
+    font-family: 'akrobatBold';
+    src:  url('../_wordpress-drones/fonts/Akrobat-ExtraBold.otf');
+    font-weight: extraBold;
+}
+@font-face {
+    font-family: 'akrobatBlack';
+    src:  url('../_wordpress-drones/fonts/Akrobat-Black.otf');
+    font-weight: black;
+}
+
 html {
   font-size: 20px;
   line-height: 1.4;
+  font-family: akrobat;
 }
 h1 {
   font-size: 4rem;
+  font-family: akrobatBlack;
 }
 
 h2 {
   font-size: 3rem;
+    font-family: akrobatBold;
 }
 
 h3 {
   font-size: 2rem;
+    font-family: akrobatBold;
 }
 
 h4 {
   font-size: 1.5rem;
+    font-family: akrobatBold;
 }

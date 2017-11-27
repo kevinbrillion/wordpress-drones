@@ -132,21 +132,41 @@ a:hover {
   outline: none;
   text-decoration: none; }
 
+@font-face {
+  font-family: 'akrobat';
+  src: url("../_wordpress-drones/fonts/Akrobat-Regular.otf");
+  font-weight: regular; }
+
+@font-face {
+  font-family: 'akrobatBold';
+  src: url("../_wordpress-drones/fonts/Akrobat-ExtraBold.otf");
+  font-weight: extraBold; }
+
+@font-face {
+  font-family: 'akrobatBlack';
+  src: url("../_wordpress-drones/fonts/Akrobat-Black.otf");
+  font-weight: black; }
+
 html {
   font-size: 20px;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-family: akrobat; }
 
 h1 {
-  font-size: 4rem; }
+  font-size: 4rem;
+  font-family: akrobatBlack; }
 
 h2 {
-  font-size: 3rem; }
+  font-size: 3rem;
+  font-family: akrobatBold; }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-family: akrobatBold; }
 
 h4 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-family: akrobatBold; }
 
 html {
   width: 100%;
@@ -190,8 +210,7 @@ body {
   max-width: 90%;
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  margin-left: -45%;
   bottom: 50%; }
 
 .discover {
@@ -246,7 +265,9 @@ body {
       display: inline-block; } }
 
 .section__title {
-  color: #F2F2F2; }
+  color: #F2F2F2;
+  font-size: 130px;
+  font-family: akrobatBlack; }
 
 .section__subTitle {
   color: #0B24FA;

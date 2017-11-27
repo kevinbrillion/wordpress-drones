@@ -71,6 +71,10 @@ const routes = {
     images: {
         src : `${base.src}/img/**`,
         dest: `${base.dest}/img/`
+    },
+    fonts: {
+        src : `${base.src}/fonts/**`,
+        dest: `${base.dest}/fonts/`
     }
 };
 
@@ -246,6 +250,12 @@ gulp.task('images:imagemin', () => {
     .pipe(gulp.dest(routes.images.dest))
 })
 
+/* Images */
+gulp.task('fonts', () => {
+    return gulp.src([routes.fonts.src])
+    .pipe(gulp.dest(routes.fonts.dest))
+})
+
 
 gulp.task('incbuild:css', () => {
     gulp.src('./package.json')
@@ -299,6 +309,7 @@ gulp.task('build', ['clean', 'incbuild:all'], () => {
     gulp.start('templates');
     gulp.start('enqueue');
     gulp.start('images:imagemin');
+    gulp.start('fonts');
 });
 
 
@@ -307,7 +318,7 @@ gulp.task('develop', ['build'], () => {
     gulp.watch(routes.templates.watch, ['templates']);
     gulp.watch(routes.styles.watch, ['incbuild:css', 'styles:concat']);
     gulp.watch(routes.scripts.watch, ['incbuild:js', 'scripts:concat']);
-    gulp.watch(routes.images.src, ['images:imagemin']);
+    gulp.watch(routes.fonts.src, ['fonts']);
 });
 
 gulp.task('default', ['develop']);
