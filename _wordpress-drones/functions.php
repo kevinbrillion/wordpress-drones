@@ -8,5 +8,5 @@ require_once 'lib/scripts-and-styles.php';
 /*
  * Product custom type
  */
-require_once 'lib/Produits/custom_type_produits.php';
-require_once 'lib/Produits/produits_fields.php';
+require_once 'lib/Produits/custom_type_products.php';
+require_once 'lib/Produits/products_fields.php';

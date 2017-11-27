@@ -17,5 +17,6 @@ function wordpress_drones_styles() {
 
     wp_enqueue_style( 'styles', get_stylesheet_uri(), [], '0.1.0+383-1511816210611');
 
+
 }
 add_action( 'wp_enqueue_scripts', 'wordpress_drones_styles' );
