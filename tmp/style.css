@@ -289,10 +289,10 @@ body {
   width: 150%;
   background: white;
   left: -10%;
-  top: 90%;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
-  z-index: 0; }
+  top: 85%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  z-index: -1; }
   @media (min-width: 789px) {
     .secondSection::before {
       display: none; } }

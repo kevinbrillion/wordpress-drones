@@ -2,8 +2,8 @@
 <main id="main" class="site-main" role="main">
     <div class="landing">
         <img class="landing__img" src="wp-content/themes/wordpress-drones/_wordpress-drones/img/drone_landing.png" alt="">
-        <h1 class="landing__title"><?php $title = get_the_title(); echo $title; ?></h1>
-        <h2 class="landing__subtitle"><?php bloginfo( 'description' ); ?> </h2>
+        <h1 class="landing__title">PARROT BEPOP 2</h1>
+        <h2 class="landing__subtitle">Nulla porttitor accumsan tincidunt.</h2>
         <a href="#" class="landing__discover btn__discover">Decouvrir</a>
     </div>
     <div class="discover">
@@ -21,7 +21,7 @@
             En immersion, le monde est à vous. Découvrez le depuis un nouveau point de vue : le ciel.
         </p>
 
-        <a href="#" class="section__btn btn__discover">Decouvrir</a>
+        <a href="<?php echo get_post_type_archive_link( 'produit' ); ?>" class="section__btn btn__discover">Decouvrir</a>
 
     </section>
 

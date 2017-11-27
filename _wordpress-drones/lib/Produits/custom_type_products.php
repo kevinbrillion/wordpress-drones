@@ -26,11 +26,11 @@ function ajout_custom_type_init() {
     'show_ui'             => true,
     'show_in_menu'        => true,
     'menu_position'       => 0,
-    'menu_icon'           => 'dashicons-carrot',
+    'menu_icon'           => 'dashicons-products',
     'show_in_nav_menus'   => true,
     'publicly_queryable'  => true,
     'exclude_from_search' => false,
-    'has_archive'         => false,
+    'has_archive'         => true,
     'query_var'           => true,
     'can_export'          => true,
     'rewrite'             => array( 'slug' => $post_type )
@@ -38,23 +38,22 @@ function ajout_custom_type_init() {
 
     register_post_type($post_type, $args );
 
-    $taxonomy="genre";
+    $taxonomy="category";
     $object_type = array("produit");
     $args = array(
-    'label' => __( 'Genre' ),
-    'rewrite' => array( 'slug' => 'genre' ),
-    'hierarchical' => true,
+    'label' => __( 'Catégorie' ),
+    'rewrite' => array( 'slug' => 'category' ),
+    'hierarchical' => false,
     );
     register_taxonomy( $taxonomy, $object_type, $args );
 
-    $taxonomy="pays";
+    $taxonomy="popularity";
     $object_type = array("produit");
     $args = array(
-    'label' => __( 'Pays' ),
-    'rewrite' => array( 'slug' => 'pays' ),
+    'label' => __( 'Popularité' ),
+    'rewrite' => array( 'slug' => 'popularity' ),
     'hierarchical' => false,
     );
     register_taxonomy( $taxonomy, $object_type, $args );
 }
 add_action( 'init', 'ajout_custom_type_init' );
-
