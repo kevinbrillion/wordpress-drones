@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f61075ad-e3ab-404e-ae52-d748e8285012" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_wordpress-drones/video/promotion-vid.mp4" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_wordpress-drones/home.php" afterPath="$PROJECT_DIR$/_wordpress-drones/home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_wordpress-drones/js/main.js" afterPath="$PROJECT_DIR$/_wordpress-drones/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_wordpress-drones/lib/scripts-and-styles.php" afterPath="$PROJECT_DIR$/_wordpress-drones/lib/scripts-and-styles.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_wordpress-drones/style.css" afterPath="$PROJECT_DIR$/_wordpress-drones/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/_common.scss" afterPath="$PROJECT_DIR$/src/scss/_common.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/es6/main.js" afterPath="$PROJECT_DIR$/src/es6/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/_home.scss" afterPath="$PROJECT_DIR$/src/scss/_home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/home.php" afterPath="$PROJECT_DIR$/src/templates/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/main.js" afterPath="$PROJECT_DIR$/tmp/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/style.css" afterPath="$PROJECT_DIR$/tmp/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,25 +29,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_wordpress-drones/home.php">
+      <file leaf-file-name="_home.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scss/_home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-              <folding>
-                <marker date="1511783483038" expanded="true" signature="496:690" ph="..." />
-                <marker date="1511783483038" expanded="true" signature="541:679" ph="..." />
-                <marker date="1511783483038" expanded="true" signature="737:1316" ph="..." />
-                <marker date="1511783483038" expanded="true" signature="877:1230" ph="..." />
-                <marker date="1511783483038" expanded="true" signature="1380:2312" ph="..." />
-                <marker date="1511783483038" expanded="true" signature="1547:2097" ph="..." />
-                <marker date="1511783483038" expanded="true" signature="1720:2082" ph="..." />
-                <marker date="1511783483038" expanded="true" signature="2359:3133" ph="..." />
-                <marker date="1511783483038" expanded="true" signature="2518:3045" ph="..." />
-                <marker date="1511783483038" expanded="true" signature="2679:3030" ph="..." />
-                <marker date="1511783483038" expanded="true" signature="3163:3310" ph="..." />
-                <marker date="1511783483038" expanded="true" signature="3325:3339" ph="..." />
-              </folding>
+            <state relative-caret-position="466">
+              <caret line="133" column="12" lean-forward="false" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,27 +43,37 @@
         <entry file="file://$PROJECT_DIR$/_wordpress-drones/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_home.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scss/_home.scss">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_wordpress-drones/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
-              <caret line="129" column="12" lean-forward="false" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
+            <state relative-caret-position="575">
+              <caret line="60" column="125" lean-forward="false" selection-start-line="60" selection-start-column="120" selection-end-line="60" selection-end-column="125" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_vars.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scss/_vars.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="851">
+              <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -87,6 +84,38 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
               <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_fonts.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scss/_fonts.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+              <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+              <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts-and-styles.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/lib/scripts-and-styles.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -116,13 +145,13 @@
         <option value="$PROJECT_DIR$/src/templates/functions.php" />
         <option value="$PROJECT_DIR$/_wordpress-drones/functions.php" />
         <option value="$PROJECT_DIR$/src/templates/index.php" />
-        <option value="$PROJECT_DIR$/src/scss/_vars.scss" />
         <option value="$PROJECT_DIR$/src/scss/style.scss" />
-        <option value="$PROJECT_DIR$/src/scss/_fonts.scss" />
         <option value="$PROJECT_DIR$/src/scss/_common.scss" />
         <option value="$PROJECT_DIR$/_wordpress-drones/home.php" />
-        <option value="$PROJECT_DIR$/src/scss/_home.scss" />
         <option value="$PROJECT_DIR$/src/templates/home.php" />
+        <option value="$PROJECT_DIR$/src/scss/_fonts.scss" />
+        <option value="$PROJECT_DIR$/src/scss/_vars.scss" />
+        <option value="$PROJECT_DIR$/src/scss/_home.scss" />
       </list>
     </option>
   </component>
@@ -180,19 +209,8 @@
             <path>
               <item name="wordpress-drones" type="b2602c69:ProjectViewProjectNode" />
               <item name="wordpress-drones" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wordpress-drones" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wordpress-drones" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wordpress-drones" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wordpress-drones" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_wordpress-drones" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -207,6 +225,9 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_wordpress-drones/video" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/templates/lib" />
       <recent name="$PROJECT_DIR$/src/templates" />
@@ -248,12 +269,12 @@
       <workItem from="1511394341205" duration="4381000" />
       <workItem from="1511614937560" duration="1710000" />
       <workItem from="1511621811565" duration="871000" />
-      <workItem from="1511783389214" duration="177000" />
+      <workItem from="1511783389214" duration="2977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15029000" />
+    <option name="totallyTimeSpent" value="17829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="980" extended-state="6" />
@@ -291,21 +312,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/scss/_common.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6394">
-          <caret line="295" column="0" lean-forward="false" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -318,20 +324,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <marker date="1511783483038" expanded="true" signature="496:690" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="541:679" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="737:1316" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="877:1230" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="1380:2312" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="1547:2097" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="1720:2082" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="2359:3133" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="2518:3045" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="2679:3030" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="3163:3310" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="3325:3339" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -586,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_wordpress-drones/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -604,14 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
           <caret line="23" column="59" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="23" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/_vars.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,46 +622,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/_fonts.scss">
+    <entry file="file://$PROJECT_DIR$/src/es6/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_wordpress-drones/home.php">
+    <entry file="file://$PROJECT_DIR$/src/templates/lib/scripts-and-styles.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding>
-            <marker date="1511783483038" expanded="true" signature="496:690" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="541:679" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="737:1316" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="877:1230" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="1380:2312" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="1547:2097" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="1720:2082" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="2359:3133" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="2518:3045" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="2679:3030" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="3163:3310" ph="..." />
-            <marker date="1511783483038" expanded="true" signature="3325:3339" ph="..." />
-          </folding>
+        <state relative-caret-position="437">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_wordpress-drones/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/_home.scss">
+    <entry file="file://$PROJECT_DIR$/_wordpress-drones/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="129" column="12" lean-forward="false" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
+        <state relative-caret-position="575">
+          <caret line="60" column="125" lean-forward="false" selection-start-line="60" selection-start-column="120" selection-end-line="60" selection-end-column="125" />
           <folding />
         </state>
       </provider>
@@ -696,10 +670,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/_fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="851">
+          <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/_vars.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/_home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="133" column="12" lean-forward="false" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
           <folding />
         </state>
       </provider>

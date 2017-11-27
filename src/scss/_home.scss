@@ -31,8 +31,13 @@
   max-width: 90%;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  margin-left: -45%;
   bottom: 50%;
+
+  @media (min-width: 1333px) {
+    margin-left: -600px;
+
+  }
 }
 
 .discover {
@@ -100,6 +105,8 @@
 
 .section__title {
   color: $grey;
+  font-size: 130px;
+  font-family: akrobatBlack;
 }
 
 .section__subTitle {
@@ -125,7 +132,6 @@
   top: 85%;
   transform: rotate(-10deg);
   z-index: -1;
-  
   @media (min-width: 789px) {
     display: none;
   }
