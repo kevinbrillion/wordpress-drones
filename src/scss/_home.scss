@@ -90,7 +90,7 @@
 
 .section__text {
   width: 100%;
-  
+
   @media (min-width: 789px) {
     width: 40%;
     margin-left: 5%;
@@ -122,10 +122,10 @@
   width: 150%;
   background: white;
   left: -10%;
-  top: 90%;
-  transform: rotate(-15deg);
-  z-index: 1;
-
+  top: 85%;
+  transform: rotate(-10deg);
+  z-index: -1;
+  
   @media (min-width: 789px) {
     display: none;
   }
