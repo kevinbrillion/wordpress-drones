@@ -9,3 +9,8 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
+        <header>
+            <a class="navbar-brand" href="#"><img src="wp-content/themes/wordpress-drones/_wordpress-drones/img/logo_parrot.png" alt=""></a>
+            <a href="">Produits</a>
+            <a href="">contact</a>
+        </header>
