@@ -4,7 +4,7 @@
         <img class="landing__img" src="<?php bloginfo('template_directory'); ?>/img/drone_landing.png" alt="">
         <h1 class="landing__title"><?php $title = get_the_title(); echo $title; ?></h1>
         <h2 class="landing__subtitle"><?php bloginfo( 'description' ); ?> </h2>
-        <a href="#" class="landing__discover btn__discover">Decouvrir</a>
+        <a href="<?php echo get_post_type_archive_link( 'produit' ); ?>" class="landing__discover btn__discover">Decouvrir</a>
     </div>
     <div class="discover">
         <div class="discover__imgContainer">

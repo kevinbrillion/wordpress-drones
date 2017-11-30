@@ -33,7 +33,7 @@ if(function_exists("register_field_group"))
             array (
                 'key' => 'field_5a08dd63fc93a',
                 'label' => 'Image 1',
-                'name' => 'images',
+                'name' => 'image_1',
                 'type' => 'image',
                 'save_format' => 'object',
                 'preview_size' => 'thumbnail',

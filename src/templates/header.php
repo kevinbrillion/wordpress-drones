@@ -16,7 +16,6 @@
         <div class="menu">
             <div class="line1 line"></div>
             <div class="line2 line"></div>
-            <div class="line3 line"></div>
         </div>
         <div class="nav-link">
             <ul>

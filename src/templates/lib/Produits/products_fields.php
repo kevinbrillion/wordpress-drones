@@ -23,7 +23,7 @@ if(function_exists("register_field_group"))
                 'label' => 'Prix',
                 'name' => 'prix',
                 'type' => 'text',
-                'default_value' => '',
+                'default_value' => 'NA',
                 'placeholder' => '',
                 'prepend' => '',
                 'append' => '',
@@ -33,7 +33,7 @@ if(function_exists("register_field_group"))
             array (
                 'key' => 'field_5a08dd63fc93a',
                 'label' => 'Image 1',
-                'name' => 'images',
+                'name' => 'image_1',
                 'type' => 'image',
                 'save_format' => 'object',
                 'preview_size' => 'thumbnail',
@@ -51,7 +51,7 @@ if(function_exists("register_field_group"))
             array (
                 'key' => 'field_5a08dd28fc939',
                 'label' => 'Technique 1',
-                'name' => 'tchnique',
+                'name' => 'technique_1',
                 'type' => 'text',
                 'default_value' => '',
                 'placeholder' => '',

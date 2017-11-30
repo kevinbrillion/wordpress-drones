@@ -1,6 +1,6 @@
 <?php get_header() ?>
     <?php
-		$the_query = new WP_Query( array( 'post_type' => 'produit' ) );
+		  $the_query = new WP_Query(array( 'post_type' => 'produit' ));
     ?>
 <main id="main" class="site-main" role="main">
   <div class="productsHeader">
@@ -23,7 +23,8 @@
   </div>
   <?php if( $the_query->have_posts() ): ?>
   <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-      <section class="firstSection productsSection"><img class="products__img" src="" alt="">
+      <?php $image_1 = get_field('image_1'); ?>
+      <section class="firstSection productsSection"><?php if( !empty($image_1) ): ?><img src="<?php echo $image_1['url']; ?>" alt="<?php echo $image_1['alt']; ?>" /><?php endif; ?>
       <div class="products__left">
         <h3 class="products__title"><?php echo get_the_title(); ?></h3>
         <p class="products__description"><?php the_field('description'); ?>
