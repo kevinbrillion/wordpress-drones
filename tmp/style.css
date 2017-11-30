@@ -516,3 +516,16 @@ header {
 
 .products__right .products__price {
   margin-bottom: 5px; }
+
+.productHeader {
+  position: relative;
+  height: 40vh;
+  width: 100vw;
+  background-color: black;
+  color: #F2F2F2; }
+
+.productSection {
+  padding: 0 3vw; }
+
+.productSection .products__title {
+  margin: 0; }
