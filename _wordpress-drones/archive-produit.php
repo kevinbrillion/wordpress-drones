@@ -32,7 +32,7 @@ $the_query = new WP_Query( array( 'post_type' => 'produit' ) );
                     <p class="products__description"><?php the_field('description'); ?></p>
                 </div>
                 <div class="products__right">
-                    <span class="products__price"><?php the_field('price'); ?>199€</span>
+                    <span class="products__price"><?php the_field('price'); ?></span>
                     <a href="<?php the_permalink($post->ID); ?>" class="section__btn btn__discover">Acheter</a>
                 </div>
               </div>

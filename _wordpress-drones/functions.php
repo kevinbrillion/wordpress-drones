@@ -1,5 +1,9 @@
 <?php
 
+
+require_once 'lib/functions/post__functions.php';
+
+
 require_once 'lib/constants.php';
 require_once 'lib/scripts-and-styles.php';
 
