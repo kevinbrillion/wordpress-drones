@@ -14,7 +14,7 @@ $the_query = new WP_Query( array( 'post_type' => 'produit' ) );
             <input type="radio"  name="drone"> Drones
             <input type="radio"  name="mini-drone"> Minidrones
         </div>
-        <span class="filter__title">Trier pars : </span>
+        <span class="filter__title">Trier par : </span>
         <ul>
             <li><a href="#">nouveauté</a></li>
             <li><a href="#">prix croissant</a></li>
@@ -28,7 +28,7 @@ $the_query = new WP_Query( array( 'post_type' => 'produit' ) );
                 <?php if( !empty($image_1) ): ?><img class="products__img" src="<?php echo $image_1['url']; ?>" alt="<?php echo $image_1['alt']; ?>" /><?php endif; ?>
                 <div class="products__left">
                     <h3 class="products__title section__subTitle"><?php echo get_the_title(); ?></h3>
-                    <p class="products__description"><?php the_field('description'); ?>
+                    <p class="products__description"><?php the_excerpt(); ?>
                     </p>
                 </div>
                 <div class="products__right">

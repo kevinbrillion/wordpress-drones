@@ -6,18 +6,6 @@ if(function_exists("register_field_group"))
         'title' => 'Produits',
         'fields' => array (
             array (
-                'key' => 'field_5a08dcf9fc937',
-                'label' => 'Description',
-                'name' => 'description',
-                'type' => 'text',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'html',
-                'maxlength' => '',
-            ),
-            array (
                 'key' => 'field_5a08dd12fc938',
                 'label' => 'Prix',
                 'name' => 'prix',

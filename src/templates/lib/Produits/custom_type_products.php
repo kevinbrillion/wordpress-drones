@@ -47,13 +47,18 @@ function ajout_custom_type_init() {
     );
     register_taxonomy( $taxonomy, $object_type, $args );
 
-    $taxonomy="popularity";
+    $taxonomy="gamme";
     $object_type = array("produit");
     $args = array(
-    'label' => __( 'Popularité' ),
-    'rewrite' => array( 'slug' => 'popularity' ),
+    'label' => __( 'Gamme' ),
+    'rewrite' => array( 'slug' => 'gamme' ),
     'hierarchical' => false,
     );
     register_taxonomy( $taxonomy, $object_type, $args );
 }
 add_action( 'init', 'ajout_custom_type_init' );
+
+function wpcodex_add_excerpt_support_for_cpt() {
+ add_post_type_support( 'produit', 'excerpt' );
+}
+add_action( 'init', 'wpcodex_add_excerpt_support_for_cpt' );
