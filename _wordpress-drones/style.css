@@ -493,11 +493,15 @@ header {
 .filters .category {
   margin-right: 8vw; }
 
-.productsSection {
+.products__container {
   padding: 0 3vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
@@ -505,8 +509,7 @@ header {
 .products__img {
   width: 60%;
   height: auto;
-  margin: auto;
-  background-color: rebeccapurple; }
+  margin: auto; }
 
 .productsSection .products__left .product__title {
   margin: 0; }

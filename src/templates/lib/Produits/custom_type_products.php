@@ -57,8 +57,3 @@ function ajout_custom_type_init() {
     register_taxonomy( $taxonomy, $object_type, $args );
 }
 add_action( 'init', 'ajout_custom_type_init' );
-
-function wpcodex_add_excerpt_support_for_cpt() {
- add_post_type_support( 'produit', 'excerpt' );
-}
-add_action( 'init', 'wpcodex_add_excerpt_support_for_cpt' );
