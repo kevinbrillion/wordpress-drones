@@ -8,8 +8,8 @@ if(function_exists("register_field_group"))
         'fields' => array (
             array (
                 'key' => 'field_5a08dcf9fc937',
-                'label' => 'Chapo description',
-                'name' => 'chapo_description',
+                'label' => 'Description',
+                'name' => 'description',
                 'type' => 'text',
                 'default_value' => '',
                 'placeholder' => '',
@@ -43,24 +43,6 @@ if(function_exists("register_field_group"))
                 'key' => 'field_5a08dd7ffc93b',
                 'label' => 'Image 2',
                 'name' => 'image_2',
-                'type' => 'image',
-                'save_format' => 'object',
-                'preview_size' => 'thumbnail',
-                'library' => 'all',
-            ),
-            array (
-                'key' => 'field_5a08dd8bfc93c',
-                'label' => 'Image 3',
-                'name' => 'image_3',
-                'type' => 'image',
-                'save_format' => 'object',
-                'preview_size' => 'thumbnail',
-                'library' => 'all',
-            ),
-            array (
-                'key' => 'field_5a08dd92fc93d',
-                'label' => 'Image 4',
-                'name' => 'image_4',
                 'type' => 'image',
                 'save_format' => 'object',
                 'preview_size' => 'thumbnail',
@@ -104,8 +86,8 @@ if(function_exists("register_field_group"))
             ),
             array (
                 'key' => 'field_5a08dddbfc941',
-                'label' => 'Technique 3',
-                'name' => 'technique_3',
+                'label' => 'Technique 4',
+                'name' => 'technique_4',
                 'type' => 'text',
                 'default_value' => '',
                 'placeholder' => '',
@@ -113,19 +95,7 @@ if(function_exists("register_field_group"))
                 'append' => '',
                 'formatting' => 'html',
                 'maxlength' => '',
-            ),
-            array (
-                'key' => 'field_5a08dd12fc942',
-                'label' => 'Batterie',
-                'name' => 'batterie',
-                'type' => 'text',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'html',
-                'maxlength' => '',
-            ),
+            )
         ),
         'location' => array (
             array (

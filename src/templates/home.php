@@ -1,14 +1,14 @@
 <?php get_header() ?>
 <main id="main" class="site-main" role="main">
     <div class="landing">
-        <img class="landing__img" src="wp-content/themes/wordpress-drones/_wordpress-drones/img/drone_landing.png" alt="">
+        <img class="landing__img" src="<?php bloginfo('template_directory'); ?>/img/drone_landing.png" alt="">
         <h1 class="landing__title"><?php $title = get_the_title(); echo $title; ?></h1>
         <h2 class="landing__subtitle"><?php bloginfo( 'description' ); ?> </h2>
-        <a href="#" class="landing__discover btn__discover">Decouvrir</a>
+        <a href="<?php echo get_post_type_archive_link( 'produit' ); ?>" class="landing__discover btn__discover">Decouvrir</a>
     </div>
     <div class="discover">
         <div class="discover__imgContainer">
-            <img src="wp-content/themes/wordpress-drones/_wordpress-drones/img/discover.png" alt="" class="discover__img">
+            <img src="<?php bloginfo('template_directory'); ?>/img/discover.png" alt="" class="discover__img">
         </div>
     </div>
     <section class="firstSection homeSection">
@@ -27,7 +27,7 @@
 
     </section>
     <section class="secondSection homeSection">
-        <img src="wp-content/themes/wordpress-drones/_wordpress-drones/img/section2.png" alt="" class="secondSection__img--small">
+        <img src="<?php bloginfo('template_directory'); ?>/img/section2.png" alt="" class="secondSection__img--small">
         <div class="section__text">
             <h2 class="section__title secondSection__title">02</h2>
             <h3 class="section__subTitle">Pars en mission, rien ne peut t’arrêter !</h3>
@@ -41,11 +41,11 @@
 
         </div>
 
-        <img src="wp-content/themes/wordpress-drones/_wordpress-drones/img/section2.png" alt="" class="secondSection__img--big">
+        <img src="<?php bloginfo('template_directory'); ?>/img/section2.png" alt="" class="secondSection__img--big">
 
     </section>
     <section class="thridSection homeSection">
-        <img src="wp-content/themes/wordpress-drones/_wordpress-drones/img/section3.png" alt="" class="thirdSection__img">
+        <img src="<?php bloginfo('template_directory'); ?>/img/section3.png" alt="" class="thirdSection__img">
         <div class="section__text">
             <h2 class="section__title thirdSection__title">03</h2>
             <h3 class="section__subTitle">Des technologies pour les pros</h3>
@@ -58,7 +58,7 @@
         </div>
     </section>
     <div class="home__video">
-        <video src="wp-content/themes/wordpress-drones/_wordpress-drones/video/promotion-vid.mp4" autoplay muted class="video"></video>
+        <video src="<?php bloginfo('template_directory'); ?>/video/promotion-vid.mp4" autoplay muted class="video"></video>
     </div>
 </main>
 <?php get_footer() ?>

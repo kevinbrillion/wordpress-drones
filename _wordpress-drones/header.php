@@ -11,7 +11,7 @@
     <body <?php body_class(); ?> >
 
 <header>
-    <img src="wp-content/themes/wordpress-drones/_wordpress-drones/img/logo.png" alt="" class="logoImg">
+    <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="" class="logoImg">
     <nav>
         <div class="menu">
             <div class="line1 line"></div>
@@ -20,9 +20,8 @@
         </div>
         <div class="nav-link">
             <ul>
-                <li>Drones</li>
-                <li>Mini-drones</li>
-                <li>Solutions pros</li>
+                <li>Produits</li>
+                <li>Contact</li>
             </ul>
         </div>
     </nav>

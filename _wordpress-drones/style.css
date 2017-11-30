@@ -458,3 +458,76 @@ header {
   width: 35px;
   background: white;
   margin-top: -1px; }
+
+.productsHeader {
+  position: relative;
+  height: 60vh;
+  width: 100vw;
+  background-color: black;
+  background-image: url("../../_wordpress-drones/img/produtcs_head.jpg");
+  color: #F2F2F2; }
+
+.productsHeader h1 {
+  position: absolute;
+  bottom: -8px; }
+
+.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (max-width: 620px) {
+    .filters {
+      display: block; } }
+
+.filters .filter__title {
+  color: #0B24FA;
+  font-weight: bold; }
+  @media (max-width: 620px) {
+    .filters .filter__title {
+      margin-top: 10px; } }
+
+.filters .category {
+  margin-right: 8vw; }
+
+.productsSection {
+  padding: 0 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.products__img {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  background-color: rebeccapurple; }
+
+.productsSection .products__left .product__title {
+  margin: 0; }
+
+.productsSection .products__left p {
+  width: 80%; }
+
+.products__right .products__price, .products__right .btn__discover {
+  margin: 0; }
+
+.products__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.products__right .products__price {
+  margin-bottom: 5px; }

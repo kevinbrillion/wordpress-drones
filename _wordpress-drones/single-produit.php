@@ -1,7 +1,7 @@
 <?php get_header() ?>
     <main id="main" class="site-main" role="main">
         <div class="productHeader">
-            <img class="products__img" src="wp-content/themes/wordpress-drones/_wordpress-drones/img/drone_product.jpg" alt="">
+            <img class="products__img" src="<?php bloginfo('template_directory'); ?>/img/drone_product.jpg" alt="">
         </div>
         <section class="firstSection productSection">
             <div class="presentation__product">
