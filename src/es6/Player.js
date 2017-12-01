@@ -5,8 +5,9 @@ export default class Player {
      */
     constructor() {
         this.video = document.querySelector('.video')
-
-        this.pausePlay()
+        if (this.video) {
+          this.pausePlay()
+        }
     }
     pausePlay() {
         this.video.addEventListener('click', () => {

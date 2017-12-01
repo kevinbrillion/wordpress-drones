@@ -9,4 +9,5 @@
         ?>
     </main><!-- .site-main -->
 </div><!-- .content-area -->
+
 <?php get_footer() ?>

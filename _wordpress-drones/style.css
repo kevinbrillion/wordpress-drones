@@ -195,96 +195,58 @@ body {
   background-color: #fefefe;
   overflow-x: hidden; }
 
-header {
+header.header {
+  padding: 0 6vw;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   z-index: 10;
   background: white; }
-  header .logoImg {
-    height: 40px;
-    margin-left: 20px; }
-  header nav {
-    position: absolute;
-    right: 0;
-    top: 0; }
-    header nav .nav-link ul {
-      display: inline-block; }
-    header nav .nav-link li {
-      display: inline-block;
-      padding: 15px 20px; }
-      @media (max-width: 789px) {
-        header nav .nav-link li {
-          font-size: 30px; } }
-    @media (max-width: 789px) {
-      header nav .nav-link {
-        display: none; } }
-  header .menu {
-    display: none;
-    height: 20px;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-    width: 30px;
-    text-align: right; }
-    @media (max-width: 789px) {
-      header .menu {
-        display: block; } }
-    header .menu .line {
-      height: 5px;
-      background: black;
-      border-radius: 40px;
-      position: absolute;
-      right: 0;
-      transition: width 0.2s, -webkit-transform 0.2s;
-      transition: width 0.2s, transform 0.2s;
-      transition: width 0.2s, transform 0.2s, -webkit-transform 0.2s; }
-    header .menu .line1 {
-      width: 100%; }
-    header .menu .line2 {
-      width: 70%;
-      top: 10px; }
-    header .menu .line3 {
-      width: 40%;
-      top: 20px; }
-    header .menu:hover .line {
-      width: 100%; }
-  header nav.nav-active {
-    position: fixed !important;
-    height: 100vh;
-    width: 100vw;
-    background: white;
-    display: block; }
-    header nav.nav-active .menu .line {
-      width: 100%;
-      top: 50%;
-      left: 0%; }
-    header nav.nav-active .menu .line3 {
-      display: none; }
-    header nav.nav-active .menu .line1 {
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg); }
-    header nav.nav-active .menu .line2 {
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
-    header nav.nav-active .nav-link {
-      display: block;
-      position: absolute;
-      left: 50%;
-      top: 20%;
-      -webkit-transform: translate(-50%, 0);
-              transform: translate(-50%, 0); }
-      header nav.nav-active .nav-link li {
-        display: block; }
-    header nav.nav-active::before {
-      content: '';
-      position: absolute;
-      height: 40vh;
-      width: 100vw;
-      bottom: 0;
-      background: url("../_wordpress-drones/img/menuDetails.png");
-      background-size: 100%;
-      z-index: 2; }
+  @media (max-width: 789px) {
+    header.header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      width: 100%; } }
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 20vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+@media (max-width: 789px) {
+  .probox {
+    display: none; } }
+
+.logoImg {
+  height: 40px; }
 
 .landing {
   height: 100vh;
@@ -554,8 +516,11 @@ header {
   position: relative;
   height: 40vh;
   width: 100vw;
-  background-color: black;
-  color: #F2F2F2; }
+  background-image: url("img/produt_head.jpeg");
+  color: #F2F2F2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center; }
 
 .productSection {
   padding: 0 3vw; }

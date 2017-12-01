@@ -2,12 +2,12 @@
 export default class ParallaxHome {
     constructor() {
         this.image = document.querySelector('.landing__img')
-        this.imageWidth = this.image.offsetWidth /2
-        this.innerHeight = window.innerHeight / 2
-        this.innerWidth = window.innerWidth / 2- this.imageWidth
-        console.log(this.imageWidth)
-
-        this.initParallax()
+        if (this.image) {
+          this.imageWidth = this.image.offsetWidth /2
+          this.innerHeight = window.innerHeight / 2
+          this.innerWidth = window.innerWidth / 2- this.imageWidth
+          this.initParallax()
+        }
     }
     initParallax() {
         window.addEventListener('mousemove', (e) => {
