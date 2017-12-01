@@ -142,18 +142,71 @@ var createClass = function () {
   };
 }();
 
+var AjaxTaxo = function () {
+  function AjaxTaxo() {
+    classCallCheck(this, AjaxTaxo);
+
+    this.container = document.querySelector('.filters__container');
+    this.filters = this.container.querySelectorAll('a');
+    console.log(this.filters);
+    this.clickListener();
+  }
+
+  createClass(AjaxTaxo, [{
+    key: 'clickListener',
+    value: function clickListener() {
+      var _this = this;
+
+      this.filters.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          _this.data = link.getAttribute('data-taxonomy');
+          _this.fetchMethod();
+        });
+      });
+    }
+  }, {
+    key: 'fetchMethod',
+    value: function fetchMethod() {
+      fetch('path/category/' + this.data)
+      //  get error
+      .then(function (response) {
+        if (!response.ok) {
+          throw Error(response.statusText);
+        }
+        return response;
+      }).then(function (response) {
+        return response.text();
+      })
+      // write html
+      .then(function (html) {
+        console.log(html);
+        //this.innerHTMLContainer(html)
+        //this.callback()
+      })
+
+      // in case of error
+      .catch(function (error) {
+        console.log(error);
+        console.log('error on loading');
+      });
+    }
+  }]);
+  return AjaxTaxo;
+}();
+
 /** Class */
 var ParallaxHome = function () {
     function ParallaxHome() {
         classCallCheck(this, ParallaxHome);
 
         this.image = document.querySelector('.landing__img');
-        this.imageWidth = this.image.offsetWidth / 2;
-        this.innerHeight = window.innerHeight / 2;
-        this.innerWidth = window.innerWidth / 2 - this.imageWidth;
-        console.log(this.imageWidth);
-
-        this.initParallax();
+        if (this.image) {
+            this.imageWidth = this.image.offsetWidth / 2;
+            this.innerHeight = window.innerHeight / 2;
+            this.innerWidth = window.innerWidth / 2 - this.imageWidth;
+            this.initParallax();
+        }
     }
 
     createClass(ParallaxHome, [{
@@ -178,8 +231,9 @@ var Player = function () {
         classCallCheck(this, Player);
 
         this.video = document.querySelector('.video');
-
-        this.pausePlay();
+        if (this.video) {
+            this.pausePlay();
+        }
     }
 
     createClass(Player, [{
@@ -200,49 +254,10 @@ var Player = function () {
     return Player;
 }();
 
-/** Class */
-var Header = function () {
-    function Header() {
-        classCallCheck(this, Header);
-
-        this.header = document.querySelector("header");
-        this.menu = document.querySelector(".menu");
-        this.nav = this.header.querySelector("nav");
-
-        console.log(this.header);
-        this.initHeaderClick();
-        this.removeBigScreen();
-    }
-
-    createClass(Header, [{
-        key: "initHeaderClick",
-        value: function initHeaderClick() {
-            var _this = this;
-
-            this.menu.addEventListener('click', function () {
-                _this.nav.classList.toggle('nav-active');
-            });
-        }
-    }, {
-        key: "removeBigScreen",
-        value: function removeBigScreen() {
-            var _this2 = this;
-
-            console.log('resize');
-            window.addEventListener('resize', function () {
-                if (window.innerWidth > 789 && _this2.nav.classList.contains('nav-active')) {
-                    _this2.nav.classList.remove('nav-active');
-                }
-            });
-        }
-    }]);
-    return Header;
-}();
-
 var parallax = new ParallaxHome();
 
 var player = new Player();
 
-var header = new Header();
+var ajax = new AjaxTaxo();
 
 }());

@@ -4,8 +4,6 @@ export default class Header {
         this.header = document.querySelector("header")
         this.menu = document.querySelector(".menu")
         this.nav = this.header.querySelector("nav")
-
-        console.log(this.header)
         this.initHeaderClick()
         this.removeBigScreen()
     }
@@ -15,7 +13,6 @@ export default class Header {
         })
     }
     removeBigScreen() {
-        console.log('resize')
         window.addEventListener('resize', () => {
             if (window.innerWidth > 789 && this.nav.classList.contains('nav-active')) {
                 this.nav.classList.remove('nav-active')
