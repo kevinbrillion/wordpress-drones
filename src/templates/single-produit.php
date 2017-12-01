@@ -14,7 +14,6 @@ $the_query = new WP_Query($args);
       <?php $image_1 = get_field('image_1'); ?>
         <main id="main" class="site-main" role="main">
             <div class="productHeader">
-                <img class="products__img" src="<?php bloginfo('template_directory'); ?>/img/drone_product.jpg" alt="">
             </div>
             <section class="productSection">
                 <div class="presentation__product">

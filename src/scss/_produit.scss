@@ -2,8 +2,11 @@
   position: relative;
   height: 40vh;
   width: 100vw;
-  background-color: black;
+  background-image: url("img/produt_head.jpeg");
   color: #F2F2F2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 .productSection{
