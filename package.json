@@ -3,8 +3,8 @@
   "title": "Wordpress Parrot Project",
   "version": "0.1.0",
   "build": {
-    "css": 474,
-    "js": 209
+    "css": 476,
+    "js": 211
   },
   "description": "Built with Gulp + ES6 (Babel)",
   "main": "main.js",
