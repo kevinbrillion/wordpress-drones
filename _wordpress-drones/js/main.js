@@ -1,4 +1,4 @@
-/* Wordpress Parrot Project – Author: Kevin Brillion <kevin.brillion@hetic.net> Version: 0.1.0+249 */
+/* Wordpress Parrot Project – Author: Kevin Brillion <kevin.brillion@hetic.net> Version: 0.1.0+261 */
 (function () {
 'use strict';
 

@@ -14,3 +14,7 @@ require_once 'lib/scripts-and-styles.php';
  */
 require_once 'lib/Produits/custom_type_products.php';
 require_once 'lib/Produits/products_fields.php';
+
+
+/* Home custom page */
+require_once 'lib/pages/home-back-page.php';

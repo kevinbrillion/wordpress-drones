@@ -1,4 +1,5 @@
 import $$ from './helpers';
+import './Ajax';
 import ParallaxHome from './ParallaxHome';
 import Player from './Player';
 import Header from './Header';

@@ -21,7 +21,6 @@ $the_query = new WP_Query($args);
                     <div class="title">
                         <h3 class="products__title"><?php echo get_the_title(); ?></h3>
                         <p class="product__type"><?php  $terms = get_the_terms( get_the_ID(), 'category' );
-                                                        var_dump($terms);
                                                         echo $terms[0]->name;
                                                         ?></p>
                         <h4 class="product__descriptionTitle">Description</h4>
@@ -34,13 +33,11 @@ $the_query = new WP_Query($args);
                     <a href="#" class="section__btn btn__discover">Acheter</a>
                 </div>
             </section>
-
-            <section class="homeSection">
-                <h4 class="cross-selling__title">Test</h4>
-                <div class="cross-selling">
-                    <img class="cross-selling__img" src="" alt="">
-                    <h5 class="cross-selling__title">Test</h5>
-                </div>
+            <section class="techniqueSection">
+              <div class="technique__text"><?php the_field('technique_1'); ?></div>
+              <div class="technique__text"><?php the_field('technique_2'); ?></div>
+              <div class="technique__text"><?php the_field('technique_3'); ?></div>
+              <div class="technique__text"><?php the_field('technique_4'); ?></div>
             </section>
         </main>
     <?php endwhile; ?>
