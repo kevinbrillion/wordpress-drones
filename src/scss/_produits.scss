@@ -40,6 +40,12 @@
 
 .productsSection{
   padding: 0 5rem;
+  @media (max-width: 630px) {
+    padding: 0 2rem;
+  }
+  @media (max-width: 500px) {
+    padding: 0 0.2rem;
+  }
 }
 
 .products__container{
