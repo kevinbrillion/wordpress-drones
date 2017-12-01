@@ -10,13 +10,7 @@
                     </div>
                 </div>
                 <div class="newsletter">
-                    <div class="margin__newsletter">
-                        <span>Ne ratez plus nos actualités</span>
-                        <form action="" method="post" class="subscribe-form">
-                            <input type="email" name="email" class="subscribe-input" placeholder="Abonnez-vous à la newsletter !">
-                            <button type="submit" class="subscribe-submit">Subscribe</button>
-                        </form>
-                    </div>
+                    <?php echo do_shortcode('[mc4wp_form id="306"]'); ?>
                 </div>
             </div>
         </footer>
