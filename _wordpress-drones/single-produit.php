@@ -20,18 +20,18 @@ $the_query = new WP_Query($args);
                 <div class="presentation__product">
                     <div class="title">
                         <h3 class="products__title"><?php echo get_the_title(); ?></h3>
-                        <p class="product__type"></p>
+                        <p class="product__type"><?php echo get_the_terms(); ?></p>
                         <h4 class="product__descriptionTitle">Description</h4>
                         <p class="product__description"><?php the_field('description'); ?></p>
                     </div>
                     <?php if( !empty($image_1) ): ?><img class="products__img" src="<?php echo $image_1['url']; ?>" alt="<?php echo $image_1['alt']; ?>" /><?php endif; ?>
                 </div>
                 <div class="product__right">
-                    <span class="products__price"><?php the_field('price'); ?></span>
+                    <span class="products__price"><?php the_field('prix'); ?></span>
                     <a href="#" class="section__btn btn__discover">Acheter</a>
                 </div>
             </section>
-            <section class="secondSection homeSection">
+            <section class="homeSection">
                 <h4 class="cross-selling__title">Test</h4>
                 <div class="cross-selling">
                     <img class="cross-selling__img" src="" alt="">

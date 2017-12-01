@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <?php
-$the_query = new WP_Query( array( 'post_type' => 'produit' ) );
+$the_query = new WP_Query( array( 'post_type' => 'produit', 'posts_per_page' => -1 ) );
 ?>
 <main id="main" class="site-main" role="main">
     <div class="productsHeader">
@@ -32,7 +32,7 @@ $the_query = new WP_Query( array( 'post_type' => 'produit' ) );
                     <p class="products__description"><?php the_field('description'); ?></p>
                 </div>
                 <div class="products__right">
-                    <span class="products__price"><?php the_field('price'); ?></span>
+                    <span class="products__price"><?php the_field('prix'); ?></span>
                     <a href="<?php the_permalink($post->ID); ?>" class="section__btn btn__discover">Acheter</a>
                 </div>
               </div>

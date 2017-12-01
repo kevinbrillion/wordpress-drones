@@ -5,7 +5,7 @@
             <div class="right newsletter">
                 <span>Ne ratez plus nos actualités</span>
                 <form action="" method="post" class="subscribe-form">
-                    <input type="email" name="email" class="subscribe-input" placeholder="Abonnez-vous à la news letter !" autofocus>
+                    <input type="email" name="email" class="subscribe-input" placeholder="Abonnez-vous à la newsletter !">
                     <button type="submit" class="subscribe-submit">Subscribe</button>
                 </form>
             </div>
