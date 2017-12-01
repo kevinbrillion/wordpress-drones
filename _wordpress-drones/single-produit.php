@@ -5,7 +5,7 @@ $url = home_url( $wp->request );
 $id = bwp_url_to_postid($url);
 $args = array(
   'p'         => $id,
-  'post_type' => 'any'
+  'post_type' => 'produit'
 );
 $the_query = new WP_Query($args);
 ?>
@@ -20,7 +20,7 @@ $the_query = new WP_Query($args);
                 <div class="presentation__product">
                     <div class="title">
                         <h3 class="products__title"><?php echo get_the_title(); ?></h3>
-                        <p class="product__type"><?php echo get_the_terms(); ?></p>
+                        <p class="product__type"></p>
                         <h4 class="product__descriptionTitle">Description</h4>
                         <p class="product__description"><?php the_field('description'); ?></p>
                     </div>
@@ -31,6 +31,7 @@ $the_query = new WP_Query($args);
                     <a href="#" class="section__btn btn__discover">Acheter</a>
                 </div>
             </section>
+
             <section class="homeSection">
                 <h4 class="cross-selling__title">Test</h4>
                 <div class="cross-selling">
