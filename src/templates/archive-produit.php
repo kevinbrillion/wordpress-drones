@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <?php
-$the_query = new WP_Query( array( 'post_type' => 'produit', 'posts_per_page' => -1 ) );
+$the_query = new WP_Query( array( 'post_type' => 'produit', 'posts_per_page' => 3, 'order_by' => '' ) );
 ?>
 <main id="main" class="site-main" role="main">
     <div class="productsHeader">

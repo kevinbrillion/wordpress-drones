@@ -3,6 +3,5 @@
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
 /node_modules/
-/_wordpress-drones/
-
-.idea
+_wordpress-drones/
+.idea/

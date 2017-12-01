@@ -20,7 +20,10 @@ $the_query = new WP_Query($args);
                 <div class="presentation__product">
                     <div class="title">
                         <h3 class="products__title"><?php echo get_the_title(); ?></h3>
-                        <p class="product__type"></p>
+                        <p class="product__type"><?php  $terms = get_the_terms( get_the_ID(), 'category' );
+                                                        var_dump($terms);
+                                                        echo $terms[0]->name;
+                                                        ?></p>
                         <h4 class="product__descriptionTitle">Description</h4>
                         <p class="product__description"><?php the_field('description'); ?></p>
                     </div>
